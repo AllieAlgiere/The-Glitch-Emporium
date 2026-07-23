@@ -1,0 +1,19 @@
+{
+  "id": "grey",
+  "name": "Grey",
+  "title": "Embodied Material Existence",
+  "fusionOf": ["Black", "White"],
+  "aspect": "Physical body, material existence",
+
+  "abilities": [
+    "Timeline Omniscience",
+    "Timeline Overwrite",
+    "Recent Time Rewind"
+  ],
+
+  "combatAttributes": "The speed of White combined with the strength of Black...",
+
+  "disposition": "Stoic, brooding, empty...",
+
+  "image": "../images/fusions/grey.webp"
+}
