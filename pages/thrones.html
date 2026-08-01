@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Seven Thrones</title>
+
+<link rel="stylesheet"
+      href="../css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<a href="../index.html">Home</a>
+
+<a href="fragments.html">Fragments</a>
+
+<a href="fusions.html">Fusions</a>
+
+<a href="powerscaling.html">Power Scaling</a>
+
+<a href="faq.html">AMA Archive</a>
+
+</nav>
+
+</header>
+
+<main>
+
+<h1>Seven Thrones</h1>
+
+<p>
+The Seven Thrones are the strongest Fragmental Fusions beneath Ainul himself.
+</p>
+
+<div id="thrones-container">
+
+</div>
+
+</main>
+
+<script type="module">
+
+const throneNames = [
+    "Grey",
+    "Eventide",
+    "Phlox",
+    "Vermilion",
+    "Acid"
+];
+
+const container =
+    document.getElementById("thrones-container");
+
+throneNames.forEach(name => {
+
+    const card = document.createElement("div");
+
+    card.className = "card";
+
+    card.innerHTML = `
+        <h2>${name}</h2>
+    `;
+
+    container.appendChild(card);
+
+});
+
+</script>
+
+</body>
+</html>
