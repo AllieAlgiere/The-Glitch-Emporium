@@ -1,19 +1,421 @@
+[
+  {
+    "id": "white",
+    "name": "White",
+    "title": "Embodiment of Guidance",
+    "type": "fragment",
+    "groups": ["fragment"],
+    "fusionOf": [],
+    "aspect": "Guidance",
+    "abilities": [],
+    "combatAttributes": "One of the two strongest Fragments.",
+    "disposition": "Compassionate, patient, protective.",
+    "favoriteFood": "Tacos",
+    "image": "../images/fragments/white.webp",
+    "relationships": ["Black", "Grey", "Ainul"],
+    "tags": ["Fragment", "Guidance"]
+  },
+
+  {
+    "id": "black",
+    "name": "Black",
+    "title": "Embodiment of Destruction",
+    "type": "fragment",
+    "groups": ["fragment"],
+    "fusionOf": [],
+    "aspect": "Destruction",
+    "abilities": [],
+    "combatAttributes": "Most powerful Fragment.",
+    "disposition": "Animalistic but fiercely protective of family.",
+    "favoriteFood": "Honey-glazed roast ham",
+    "image": "../images/fragments/black.webp",
+    "relationships": ["White", "Grey", "Ainul"],
+    "tags": ["Fragment", "Destruction"]
+  },
+
+  {
+    "id": "red",
+    "name": "Red",
+    "title": "Embodiment of Passion",
+    "type": "fragment",
+    "groups": ["fragment"],
+    "fusionOf": [],
+    "aspect": "Passion",
+    "abilities": [
+      "Pyrokinesis",
+      "Nuclear-Level Flame Output"
+    ],
+    "combatAttributes": "Overwhelming offensive power.",
+    "disposition": "Hot-headed, energetic, impulsive.",
+    "favoriteFood": "Chili",
+    "image": "../images/fragments/red.webp",
+    "relationships": ["Blue", "Yellow", "Green"],
+    "tags": ["Fragment", "Fire"]
+  },
+
+  {
+    "id": "blue",
+    "name": "Blue",
+    "title": "Embodiment of Curiosity",
+    "type": "fragment",
+    "groups": ["fragment"],
+    "fusionOf": [],
+    "aspect": "Curiosity",
+    "abilities": [],
+    "combatAttributes": "Weakest Fragment individually but naturally counters Red.",
+    "disposition": "Curious, friendly, excitable.",
+    "favoriteFood": "Mac and Cheese",
+    "image": "../images/fragments/blue.webp",
+    "relationships": ["Red", "Yellow", "Green"],
+    "tags": ["Fragment", "Curiosity"]
+  },
+
+  {
+    "id": "green",
+    "name": "Green",
+    "title": "Embodiment of Harmony",
+    "type": "fragment",
+    "groups": ["fragment"],
+    "fusionOf": [],
+    "aspect": "Harmony",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "Peaceful but does not tolerate cruelty.",
+    "favoriteFood": "Pasta salad with rucola, roasted pine nuts, balsamico, Italian ham and parmesan",
+    "image": "../images/fragments/green.webp",
+    "relationships": ["Red", "Blue", "Yellow"],
+    "tags": ["Fragment", "Harmony"]
+  },
+
+  {
+    "id": "yellow",
+    "name": "Yellow",
+    "title": "Embodiment of Optimism",
+    "type": "fragment",
+    "groups": ["fragment"],
+    "fusionOf": [],
+    "aspect": "Optimism",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "Cheerful and supportive.",
+    "favoriteFood": "Cordon Bleu with country potatoes",
+    "image": "../images/fragments/yellow.webp",
+    "relationships": ["Red", "Blue", "Green"],
+    "tags": ["Fragment", "Optimism"]
+  },
+
+  {
+    "id": "cyan",
+    "name": "Cyan",
+    "title": "Embodiment of Discovery",
+    "type": "fragment",
+    "groups": ["fragment"],
+    "fusionOf": [],
+    "aspect": "Discovery",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "Inquisitive and adventurous.",
+    "favoriteFood": "Cheeseburgers",
+    "image": "../images/fragments/cyan.webp",
+    "relationships": [],
+    "tags": ["Fragment", "Discovery"]
+  },
+
+  {
+    "id": "magenta",
+    "name": "Magenta",
+    "title": "Embodiment of Pride",
+    "type": "fragment",
+    "groups": ["fragment"],
+    "fusionOf": [],
+    "aspect": "Pride",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "Confident, charismatic, social.",
+    "favoriteFood": "Nigiri Sushi",
+    "image": "../images/fragments/magenta.webp",
+    "relationships": [],
+    "tags": ["Fragment", "Pride"]
+  },
+
+  {
+    "id": "umbra",
+    "name": "Umbra",
+    "title": "Embodiment of Ambition",
+    "type": "fragment",
+    "groups": ["fragment"],
+    "fusionOf": [],
+    "aspect": "Ambition",
+    "abilities": [],
+    "combatAttributes": "Fourth strongest Fragment.",
+    "disposition": "Calculating, practical, success-driven.",
+    "favoriteFood": "Cheese-ham pancakes",
+    "image": "../images/fragments/umbra.webp",
+    "relationships": [],
+    "tags": ["Fragment", "Ambition"]
+  },
+
+  {
+    "id": "taffy",
+    "name": "Taffy",
+    "title": "Embodiment of Instinct",
+    "type": "fragment",
+    "groups": ["fragment"],
+    "fusionOf": [],
+    "aspect": "Instinct",
+    "abilities": [],
+    "combatAttributes": "Third strongest Fragment.",
+    "disposition": "Wild, straightforward, loyal.",
+    "favoriteFood": "Smoked eel",
+    "image": "../images/fragments/taffy.webp",
+    "relationships": [],
+    "tags": ["Fragment", "Instinct"]
+  },
+
+  {
+    "id": "lavender",
+    "name": "Lavender",
+    "title": "Embodiment of Expression",
+    "type": "fragment",
+    "groups": ["fragment"],
+    "fusionOf": [],
+    "aspect": "Expression",
+    "abilities": [],
+    "combatAttributes": "",
+    "disposition": "",
+    "favoriteFood": "",
+    "image": "../images/fragments/lavender.webp",
+    "relationships": [],
+    "tags": ["Fragment"]
+  },
+
+  {
+    "id": "cider",
+    "name": "Cider",
+    "title": "Embodiment of Emotion",
+    "type": "fragment",
+    "groups": ["fragment"],
+    "fusionOf": [],
+    "aspect": "Emotion",
+    "abilities": [
+      "Mood-Based Power Scaling"
+    ],
+    "combatAttributes": "Fifth strongest Fragment at maximum output.",
+    "disposition": "Power fluctuates according to emotional state.",
+    "favoriteFood": "",
+    "image": "../images/fragments/cider.webp",
+    "relationships": ["Umbra"],
+    "tags": ["Fragment", "Emotion"]
+  }
+{
+  "id": "mauve",
+  "name": "Mauve",
+  "title": "Fusion of Blue, Taffy and Umbra",
+  "type": "fusion",
+  "groups": ["fusion"],
+  "fusionOf": ["Blue", "Taffy", "Umbra"],
+  "aspect": "Combined aspects of Curiosity, Instinct and Ambition",
+  "abilities": [],
+  "combatAttributes": "",
+  "disposition": "",
+  "image": "../images/fusions/mauve.webp",
+  "relationships": ["Blue", "Taffy", "Umbra"],
+  "tags": ["Fusion"]
+},
+
+{
+  "id": "aegus",
+  "name": "Aegus",
+  "title": "Fusion of Green, Umbra and Cyan",
+  "type": "fusion",
+  "groups": ["fusion"],
+  "fusionOf": ["Green", "Umbra", "Cyan"],
+  "aspect": "Combined aspects of Harmony, Ambition and Discovery",
+  "abilities": [],
+  "combatAttributes": "",
+  "disposition": "",
+  "image": "../images/fusions/aegus.webp",
+  "relationships": ["Green", "Umbra", "Cyan"],
+  "tags": ["Fusion"]
+},
+
+{
+  "id": "orchid",
+  "name": "Orchid",
+  "title": "Fusion of Magenta and Lavender",
+  "type": "fusion",
+  "groups": ["fusion"],
+  "fusionOf": ["Magenta", "Lavender"],
+  "aspect": "Combined aspects of Pride and Expression",
+  "abilities": [],
+  "combatAttributes": "",
+  "disposition": "",
+  "image": "../images/fusions/orchid.webp",
+  "relationships": ["Magenta", "Lavender"],
+  "tags": ["Fusion"]
+},
+
+{
+  "id": "vermilion",
+  "name": "Vermilion",
+  "title": "One of the Seven Thrones",
+  "type": "fusion",
+  "groups": ["fusion", "seven-thrones"],
+  "fusionOf": ["Red", "Magenta", "Cider", "Taffy", "Umbra"],
+  "aspect": "",
+  "abilities": [],
+  "combatAttributes": "",
+  "disposition": "",
+  "image": "../images/fusions/vermilion.webp",
+  "relationships": ["Red", "Magenta", "Cider", "Taffy", "Umbra"],
+  "tags": ["Fusion", "Seven Thrones"]
+},
+
+{
+  "id": "thistle",
+  "name": "Thistle",
+  "title": "Fusion of Lavender and Taffy",
+  "type": "fusion",
+  "groups": ["fusion"],
+  "fusionOf": ["Lavender", "Taffy"],
+  "aspect": "Combined aspects of Expression and Instinct",
+  "abilities": [],
+  "combatAttributes": "",
+  "disposition": "",
+  "image": "../images/fusions/thistle.webp",
+  "relationships": ["Lavender", "Taffy"],
+  "tags": ["Fusion"]
+},
+
+{
+  "id": "eventide",
+  "name": "Eventide",
+  "title": "One of the Seven Thrones",
+  "type": "fusion",
+  "groups": ["fusion", "seven-thrones"],
+  "fusionOf": ["Blue", "Taffy", "Umbra", "Cyan", "Lavender"],
+  "aspect": "",
+  "abilities": [],
+  "combatAttributes": "",
+  "disposition": "",
+  "image": "../images/fusions/eventide.webp",
+  "relationships": ["Blue", "Taffy", "Umbra", "Cyan", "Lavender"],
+  "tags": ["Fusion", "Seven Thrones"]
+},
+
+{
+  "id": "indigo",
+  "name": "Indigo",
+  "title": "Fusion of Blue and Taffy",
+  "type": "fusion",
+  "groups": ["fusion"],
+  "fusionOf": ["Blue", "Taffy"],
+  "aspect": "Combined aspects of Curiosity and Instinct",
+  "abilities": [],
+  "combatAttributes": "",
+  "disposition": "",
+  "image": "../images/fusions/indigo.webp",
+  "relationships": ["Blue", "Taffy"],
+  "tags": ["Fusion"]
+},
+
+{
+  "id": "phlox",
+  "name": "Phlox",
+  "title": "One of the Seven Thrones",
+  "type": "fusion",
+  "groups": ["fusion", "seven-thrones"],
+  "fusionOf": ["Magenta", "Cyan", "Blue", "Lavender", "Green", "Yellow", "Red"],
+  "aspect": "",
+  "abilities": [],
+  "combatAttributes": "",
+  "disposition": "",
+  "image": "../images/fusions/phlox.webp",
+  "relationships": ["Magenta", "Cyan", "Blue", "Lavender", "Green", "Yellow", "Red"],
+  "tags": ["Fusion", "Seven Thrones"]
+},
+
+{
+  "id": "tempest",
+  "name": "Tempest",
+  "title": "Fusion of Blue, Green and Yellow",
+  "type": "fusion",
+  "groups": ["fusion"],
+  "fusionOf": ["Blue", "Green", "Yellow"],
+  "aspect": "Combined aspects of Curiosity, Harmony and Optimism",
+  "abilities": [],
+  "combatAttributes": "",
+  "disposition": "",
+  "image": "../images/fusions/tempest.webp",
+  "relationships": ["Blue", "Green", "Yellow"],
+  "tags": ["Fusion"]
+},
+
+{
+  "id": "acid",
+  "name": "Acid",
+  "title": "One of the Seven Thrones",
+  "type": "fusion",
+  "groups": ["fusion", "seven-thrones"],
+  "fusionOf": ["Taffy", "Yellow", "Cider", "Cyan", "Umbra", "Magenta"],
+  "aspect": "",
+  "abilities": [],
+  "combatAttributes": "",
+  "disposition": "",
+  "image": "../images/fusions/acid.webp",
+  "relationships": ["Taffy", "Yellow", "Cider", "Cyan", "Umbra", "Magenta"],
+  "tags": ["Fusion", "Seven Thrones"]
+},
+
+{
+  "id": "king",
+  "name": "King",
+  "title": "Fusion of Red, Umbra and Cider",
+  "type": "fusion",
+  "groups": ["fusion"],
+  "fusionOf": ["Red", "Umbra", "Cider"],
+  "aspect": "Combined aspects of Passion, Ambition and Emotion",
+  "abilities": [],
+  "combatAttributes": "",
+  "disposition": "",
+  "image": "../images/fusions/king.webp",
+  "relationships": ["Red", "Umbra", "Cider"],
+  "tags": ["Fusion"]
+},
+
+{
+  "id": "ral",
+  "name": "Ral",
+  "title": "Fusion of Taffy, Red, Blue, Umbra and Cider",
+  "type": "fusion",
+  "groups": ["fusion"],
+  "fusionOf": ["Taffy", "Red", "Blue", "Umbra", "Cider"],
+  "aspect": "",
+  "abilities": [],
+  "combatAttributes": "",
+  "disposition": "",
+  "image": "../images/fusions/ral.webp",
+  "relationships": ["Taffy", "Red", "Blue", "Umbra", "Cider"],
+  "tags": ["Fusion"]
+},
+
 {
   "id": "grey",
   "name": "Grey",
-  "title": "Embodied Material Existence",
+  "title": "Embodiment of Material Existence",
+  "type": "fusion",
+  "groups": ["fusion", "seven-thrones"],
   "fusionOf": ["Black", "White"],
-  "aspect": "Physical body, material existence",
-
+  "aspect": "Physical body and material existence",
   "abilities": [
     "Timeline Omniscience",
     "Timeline Overwrite",
     "Recent Time Rewind"
   ],
-
-  "combatAttributes": "The speed of White combined with the strength of Black...",
-
-  "disposition": "Stoic, brooding, empty...",
-
-  "image": "../images/fusions/grey.webp"
+  "combatAttributes": "Incomplete manifestation of the Whole One.",
+  "disposition": "Balance between White and Black.",
+  "image": "../images/fusions/grey.webp",
+  "relationships": ["Black", "White", "Ainul"],
+  "tags": ["Fusion", "Timeline", "Seven Thrones"]
 }
+]
