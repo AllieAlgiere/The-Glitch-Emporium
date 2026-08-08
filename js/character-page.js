@@ -1,78 +1,81 @@
-import { getCharacter } from "./data-loader.js";
-import {
-    getQueryParam,
-    createAbilityList,
-    formatFusionList
-} from "./utils.js";
+import { loadJSON } from "./data-loader.js";
+import { getURLParameter } from "./utils.js";
 
-const characterContainer =
-    document.getElementById("character-container");
+async function loadCharacter() {
 
-async function renderCharacter() {
+    const id =
+        getURLParameter("id");
 
-    const id = getQueryParam("id");
+    const data =
+        await loadJSON("../data/characters.json");
 
-    if (!id) {
-        characterContainer.innerHTML = `
-            <h1>Character Not Found</h1>
-            <p>No character ID provided.</p>
-        `;
-        return;
-    }
+    const character =
+        data.characters.find(
+            c => c.id === id
+        );
 
-    const character = await getCharacter(id);
+    const container =
+        document.getElementById(
+            "character-container"
+        );
 
     if (!character) {
-        characterContainer.innerHTML = `
-            <h1>Character Not Found</h1>
-            <p>The requested character does not exist.</p>
-        `;
+
+        container.innerHTML =
+            "<h2>Character not found.</h2>";
+
         return;
+
     }
 
-    characterContainer.innerHTML = `
-        <div class="character-header">
+    container.innerHTML = `
+        <img
+            src="${character.image}"
+            alt="${character.name}"
+            class="character-image"
+        >
 
-            <img
-                src="${character.image}"
-                alt="${character.name}"
-                class="character-image"
-            >
+        <h1>${character.name}</h1>
 
-            <div>
-                <h1>${character.name}</h1>
-                <h2>${character.title}</h2>
-            </div>
+        <h2>${character.title}</h2>
 
-        </div>
+        <p>
+            <strong>Aspect:</strong>
+            ${character.aspect}
+        </p>
 
-        <section>
-            <h3>Fusion Of</h3>
-            <p>${formatFusionList(character.fusionOf)}</p>
-        </section>
+        <p>
+            <strong>Disposition:</strong>
+            ${character.disposition}
+        </p>
 
-        <section>
-            <h3>Embodied Aspect</h3>
-            <p>${character.aspect}</p>
-        </section>
+        <h3>Abilities</h3>
 
-        <section>
-            <h3>Abilities</h3>
-            <ul>
-                ${createAbilityList(character.abilities)}
-            </ul>
-        </section>
+        <ul>
 
-        <section>
-            <h3>Combat Attributes</h3>
-            <p>${character.combatAttributes}</p>
-        </section>
+        ${character.abilities
+            .map(
+                ability =>
+                    `<li>${ability}</li>`
+            )
+            .join("")}
 
-        <section>
-            <h3>Disposition</h3>
-            <p>${character.disposition}</p>
-        </section>
+        </ul>
+
+        <h3>Relationships</h3>
+
+        <ul>
+
+        ${character.relationships
+            .map(
+                relationship =>
+                    `<li>${relationship}</li>`
+            )
+            .join("")}
+
+        </ul>
     `;
+
 }
 
-renderCharacter();
+loadCharacter();

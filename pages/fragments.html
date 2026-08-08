@@ -1,31 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fragments</title>
 
-    <link rel="stylesheet" href="../css/style.css">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Fragments</title>
+
+<link rel="stylesheet"
+href="../css/style.css">
+
 </head>
+
 <body>
 
 <header>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="fusions.html">Fusions</a>
-        <a href="faq.html">AMA Archive</a>
-    </nav>
+
+<h1>Fragments</h1>
+
+<nav>
+
+<a href="../index.html">Home</a>
+
+</nav>
+
 </header>
 
 <main>
 
-    <h1>Fragments</h1>
-
-    <div id="character-list"></div>
+<div id="fragment-list"></div>
 
 </main>
 
-<script type="module" src="../js/character-list.js"></script>
+<script type="module">
+
+import { loadJSON }
+from "../js/data-loader.js";
+
+const data =
+await loadJSON("../data/characters.json");
+
+const container =
+document.getElementById(
+"fragment-list"
+);
+
+data.characters
+.filter(
+c => c.type === "fragment"
+)
+.forEach(character => {
+
+container.innerHTML += `
+<div class="character-card">
+
+<a href="character.html?id=${character.id}">
+
+<img
+src="${character.image}"
+alt="${character.name}"
+>
+
+<h2>${character.name}</h2>
+
+</a>
+
+</div>
+`;
+
+});
+
+</script>
 
 </body>
+
 </html>

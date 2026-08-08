@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 <title>Fusions</title>
 
@@ -13,13 +18,61 @@ href="../css/style.css">
 
 <body>
 
-<h1>Fragmental Fusions</h1>
+<header>
 
-<div id="fusionGrid">
+<h1>Fusions</h1>
+
+<nav>
+
+<a href="../index.html">Home</a>
+
+</nav>
+
+</header>
+
+<main>
+
+<div id="fusion-list"></div>
+
+</main>
+
+<script type="module">
+
+import { loadJSON }
+from "../js/data-loader.js";
+
+const data =
+await loadJSON("../data/characters.json");
+
+const container =
+document.getElementById(
+"fusion-list"
+);
+
+data.characters
+.filter(
+c => c.type === "fusion"
+)
+.forEach(character => {
+
+container.innerHTML += `
+<div class="character-card">
+
+<a href="character.html?id=${character.id}">
+
+<img
+src="${character.image}"
+alt="${character.name}"
+>
+
+<h2>${character.name}</h2>
+
+</a>
 
 </div>
+`;
 
-<script src="../js/render.js">
+});
 
 </script>
 

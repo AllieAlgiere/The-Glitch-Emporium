@@ -1,16 +1,9 @@
-export async function loadCharacters() {
-    const response =
-        await fetch("../data/characters.json");
+export async function loadJSON(path) {
+    const response = await fetch(path);
 
-    const data = await response.json();
+    if (!response.ok) {
+        throw new Error(`Failed loading ${path}`);
+    }
 
-    return data.characters;
-}
-
-export async function getCharacter(id) {
-    const characters = await loadCharacters();
-
-    return characters.find(
-        character => character.id === id
-    );
+    return await response.json();
 }

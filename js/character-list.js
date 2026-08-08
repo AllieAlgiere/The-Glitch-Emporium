@@ -1,17 +1,36 @@
-import { loadCharacters } from "./data-loader.js";
+import { loadJSON } from "./data-loader.js";
 
-const container = document.getElementById("character-grid");
+async function buildCharacterList() {
 
-async function renderCharacters() {
-    const characters = await loadCharacters();
+    const data = await loadJSON("../data/characters.json");
 
-    container.innerHTML = characters.map(character => `
-        <a href="character.html?id=${character.id}" class="character-card">
-            <img src="${character.image}" alt="${character.name}">
-            <h2>${character.name}</h2>
-            <p>${character.aspect}</p>
-        </a>
-    `).join("");
+    const container =
+        document.getElementById("character-list");
+
+    data.characters.forEach(character => {
+
+        const card =
+            document.createElement("div");
+
+        card.classList.add("character-card");
+
+        card.innerHTML = `
+            <a href="character.html?id=${character.id}">
+                <img
+                    src="${character.image}"
+                    alt="${character.name}"
+                >
+
+                <h2>${character.name}</h2>
+
+                <p>${character.title}</p>
+            </a>
+        `;
+
+        container.appendChild(card);
+
+    });
+
 }
 
-renderCharacters();
+buildCharacterList();

@@ -1,0 +1,87 @@
+{
+  "id": "the-beast",
+
+  "name": "The Beast",
+
+  "title": "Ainul Unleashed",
+
+  "type": "ultimate-form",
+
+  "groups": [
+    "whole-one",
+    "beast-form"
+  ],
+
+  "aspect": "The absolute release of Ainul's suppressed instincts, emotions, power and primal nature.",
+
+  "description": "The Beast is not a separate entity from Ainul, but rather the complete removal of every restraint normally imposed upon him. It represents the deepest, oldest and most primal aspect of the Whole One. While all Fragments possess Overclock states that bring out hidden power, The Beast is the equivalent state for Ainul himself. It is the ultimate manifestation of everything he truly is.",
+
+  "origin": "The Beast exists within Ainul and echoes throughout every Fragment. It is the source of the overwhelming ferocity occasionally displayed by Fragment Overclocks.",
+
+  "relatedForms": [
+    "Ainul",
+    "Black",
+    "White",
+    "Grey"
+  ],
+
+  "abilities": [
+    "Unrestricted Power Output",
+    "Maximum Fragment Synchronization",
+    "Absolute Physical Dominance",
+    "Reality Overwhelming",
+    "Conceptual Destruction",
+    "Existence Beyond Death",
+    "Infinite Regeneration",
+    "Perfect Adaptation",
+    "Instinctive Combat Mastery",
+    "Universal Scale Destruction"
+  ],
+
+  "combatAttributes": {
+    "strength": "Maximum",
+    "speed": "Maximum",
+    "durability": "Maximum",
+    "intelligence": "Instinctive Perfection",
+    "power": "Unrestricted"
+  },
+
+  "behavior": {
+    "aggression": "Extreme",
+    "control": "Unknown",
+    "selfPreservation": "Irrelevant",
+    "awareness": "Complete"
+  },
+
+  "lore": {
+    "fragmentConnection": "Every Fragment carries a small reflection of The Beast within itself.",
+    "overclockRelation": "Fragment Overclocks are miniature manifestations of the same principle.",
+    "ainulRelation": "The Beast is Ainul's equivalent to an Overclock state.",
+    "rarity": "Exceptionally rare and almost never witnessed."
+  },
+
+  "knownFacts": [
+    "The Beast can be assumed by Ainul.",
+    "The Beast can be assumed by Fragments in lesser forms.",
+    "It has been referenced but not fully revealed.",
+    "It is associated with overwhelming power.",
+    "It is not a separate person."
+  ],
+
+  "quotes": [
+    "Though there is one more form that both the Fragments AND Ainul as a whole can assume. The Beast.",
+    "He has something like an overclock too: his unleashed form."
+  ],
+
+  "image": "../images/forms/beast.webp",
+
+  "tags": [
+    "Beast",
+    "Ultimate Form",
+    "Overclock",
+    "Whole One",
+    "Lore Core",
+    "Unleashed",
+    "Ainul"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "ainul",
+
+  "name": "Ainul",
+
+  "title": "The Whole One",
+
+  "type": "whole-one",
+
+  "groups": [
+    "whole-one"
+  ],
+
+  "aspect": "The complete and original being from which all Fragments originate.",
+
+  "description": "Ainul is the fully restored Whole One. Every Fragment, Fusion, emotion, concept, instinct, memory and aspect exists as a part of him. Whenever all twelve Fragments unite, the result is always Ainul in his complete form. No alternative outcome exists.",
+
+  "fragmentCount": 12,
+
+  "containsFragments": [
+    "White",
+    "Black",
+    "Red",
+    "Blue",
+    "Green",
+    "Yellow",
+    "Cyan",
+    "Magenta",
+    "Umbra",
+    "Taffy",
+    "Lavender",
+    "Cider"
+  ],
+
+  "forms": [
+    {
+      "name": "Whole One",
+      "description": "The complete and balanced form of Ainul."
+    },
+    {
+      "name": "The Beast",
+      "description": "A hidden unleashed state possessed by Ainul and reflected in certain Fragment overclocks."
+    }
+  ],
+
+  "abilities": [
+    "Fragmental Fusion",
+    "Existence Beyond Death",
+    "Complete Restoration",
+    "Reality Manipulation",
+    "Conceptual Existence",
+    "Universal Scale Power",
+    "Perfect Memory",
+    "Complete Fragment Synchronization"
+  ],
+
+  "combatAttributes": {
+    "strength": "Unknown",
+    "speed": "Unknown",
+    "durability": "Cannot be measured",
+    "intelligence": "Complete",
+    "power": "Highest"
+  },
+
+  "disposition": "A complete synthesis of every Fragment. His personality shifts naturally depending on which aspect is most dominant at any given moment.",
+
+  "relationships": [
+    "White",
+    "Black",
+    "Red",
+    "Blue",
+    "Green",
+    "Yellow",
+    "Cyan",
+    "Magenta",
+    "Umbra",
+    "Taffy",
+    "Lavender",
+    "Cider"
+  ],
+
+  "lore": {
+    "origin": "The original being before Fragmentation.",
+    "fragmentation": "At an unknown point Ainul split into twelve essential Fragments, each embodying a core aspect of his existence.",
+    "reformation": "Only the presence of every Fragment allows complete restoration.",
+    "death": "According to Ainul himself, he is not immortal. He is literally incapable of dying."
+  },
+
+  "quotes": [
+    "You can possibly destroy a Fragment, but never Ainul when whole."
+  ],
+
+  "image": "../images/ainul/ainul.webp",
+
+  "tags": [
+    "Whole One",
+    "Fragment Origin",
+    "Fusion",
+    "The Beast",
+    "Lore Core"
+  ]
+}

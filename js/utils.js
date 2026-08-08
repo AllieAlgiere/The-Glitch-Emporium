@@ -1,24 +1,14 @@
-export function getQueryParam(param) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
+export function getURLParameter(name) {
+    const params = new URLSearchParams(window.location.search);
+
+    return params.get(name);
 }
 
-export function createAbilityList(abilities) {
-    return abilities
-        .map(ability => `<li>${ability}</li>`)
-        .join("");
-}
+export function createTag(tagText) {
+    const tag = document.createElement("span");
 
-export function createTagList(tags) {
-    return tags
-        .map(tag => `<span class="tag">${tag}</span>`)
-        .join("");
-}
+    tag.classList.add("tag");
+    tag.textContent = tagText;
 
-export function formatFusionList(fusionOf) {
-    return fusionOf.join(" + ");
-}
-
-export function capitalize(text) {
-    return text.charAt(0).toUpperCase() + text.slice(1);
+    return tag;
 }

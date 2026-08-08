@@ -1,79 +1,100 @@
 async function loadCharacter() {
 
-const params =
-new URLSearchParams(
-window.location.search
-);
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
 
-const id =
-params.get("id");
+    const id =
+        params.get("id");
 
-const response =
-await fetch(
-"../data/database.json"
-);
+    const response =
+        await fetch(
+            "../data/characters.json"
+        );
 
-const data =
-await response.json();
+    const data =
+        await response.json();
 
-const allCharacters = [
+    const character =
+        data.characters.find(
+            c => c.id === id
+        );
 
-...data.fragments,
+    const container =
+        document.getElementById(
+            "character-container"
+        );
 
-...data.fusions,
+    if (!character) {
 
-...data.thrones
+        container.innerHTML =
+            "<h2>Character Not Found</h2>";
 
-];
+        return;
+    }
 
-const character =
-allCharacters.find(
-c => c.id === id
-);
+    container.innerHTML = `
 
-if(!character){
+        <div class="character-profile">
 
-document.body.innerHTML =
-"<h1>Character Not Found</h1>";
+            <img
+                src="${character.image}"
+                alt="${character.name}"
+                class="character-image"
+            >
 
-return;
-}
+            <h1>${character.name}</h1>
 
-document.getElementById(
-"character"
-).innerHTML =
+            <h2>${character.title || ""}</h2>
 
-`
-<h1>${character.name}</h1>
+            <p>
+                <strong>Aspect:</strong>
+                ${character.aspect || ""}
+            </p>
 
-<p>${character.aspect || ""}</p>
+            <p>
+                <strong>Disposition:</strong>
+                ${
+                    character.disposition ||
+                    character.personality ||
+                    ""
+                }
+            </p>
 
-<img
-src="../${character.image}"
-alt="${character.name}"
->
+            <h3>Abilities</h3>
 
-<h2>Abilities</h2>
+            <ul>
 
-<ul>
+                ${
+                    (character.abilities || [])
+                    .map(
+                        ability =>
+                            `<li>${ability}</li>`
+                    )
+                    .join("")
+                }
 
-${character.abilities
-.map(
-ability =>
-`<li>${ability}</li>`
-)
-.join("")}
+            </ul>
 
-</ul>
+            <h3>Relationships</h3>
 
-<p>
+            <ul>
 
-${character.disposition
-|| character.personality
-|| ""}
+                ${
+                    (character.relationships || [])
+                    .map(
+                        relation =>
+                            `<li>${relation}</li>`
+                    )
+                    .join("")
+                }
 
-</p>
-`;
+            </ul>
+
+        </div>
+
+    `;
 }
 
 loadCharacter();
